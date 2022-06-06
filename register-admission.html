@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hy">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="MKRTICH MANUKYAN">
+      <title>IT Center Ghukasavan</title>
+      <link rel="icon" type="image/jpg" href="img/logo.jpg">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/15274a4f77.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+  <header class="sticky-top">
+          <nav class="navbar navbar-default navbar-expand-lg navbar-light" id="header">
+            <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+                        aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+            <ul class="nav navbar-nav ul-nav">
+                <li class="nav-item p-3">
+                    <a href="news.html">Նորություններ</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a href="lecturers.html">Դասախոսներ</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a href="about us.html">Մեր մասին</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a href="register.html">Ընդունելություն</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+  </header>
+  <menu class="menu-register">
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="mkrtichmanukyan1@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbxJSmYSuxrZ1VV49fFj4We8-qDFzHHffXtpxrt1KorSmZKzGmIPUg7ON2M9dno1BBZ1rQ/exec">
+    <div class="form-elements">
+      <div class="form-div">
+        <p class="content-head">Ընդունելության Գրանցում</p>
+        <div class="form-row d-flex">
+            <div class="form-group col-md-6 input-margin">
+                <input type="text" class="input-register" name="first_name" placeholder="Անուն">
+            </div>
+            <div class="form-group col-md-6 input-margin">
+                <input type="text" class="input-register" id="last_name" name="last_name" placeholder="Ազգանուն">
+            </div>
+        </div>
+        <div class="form-row d-flex">
+            <div class="form-group col-md-6 input-margin d-flex flex-column align-items-start">
+                <label for="name" class="input-label-two">Սեռ</label>
+                <div class="form-check form-check-inline form-margin-input">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label input-label-two" for="male">Արական</label>
+                </div>
+                <div class="form-check form-check-inline form-margin-input">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label input-label-two" for="female">Իգական</label>
+                </div>
+            </div>
+            <div class="form-group col-md-6 input-margin">
+                <label for="dateOfBirth" class="input-label-two">Ծննդյան օր</label>
+                <input type="date" class="input-register" id="dateOfBirth" name="dateOfBirth">
+            </div>
+        </div>
+        <div class="form-row d-flex">
+            <div class="form-group col-md-6 input-margin">
+                <input type="email" class="input-register" id="email" name="email" placeholder="էլ.հասցե">
+            </div>
+            <div class="form-group col-md-6 input-margin">
+                <input type="tel" class="input-register" id="phone" name="phone" placeholder="Ծնողի հեռ․">
+            </div>
+        </div>
+    
+      <button class="input-register-button" onclick="animateText(textExample)">ՈՒղարկել</button>
+      </div>
+    </div>
+    <div class="thankyou_message">
+      <p>Շնորհակալություն գրանցման համար հարգելի օգտատեր</p>
+      <p>*******</p>
+    </div>
+  </form>
+</menu>
+<footer class="footer">
+    <div class="footer-menu navbar">
+      <div class="footer-text">
+          <p>Ձեր կարծիքը կարևոր է.</p>
+          <p>էլ. փոստ՝ <a href="mailTo:Ghukasavan@gmail.com" target="_blank">Ghukasavan@gmail.com</a></p>
+          <p>հեռ․՝ <a href="tel:+374-93-988-774">+374-93-988-774</a></p>
+          <p>հասցե՝ Գյուղ Ղուկասավան</p>
+      </div>
+        <div class="footer-text">
+          <p>© 2022 | Պատրաստված է html-ով և css-ով</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="register-follow.html">Բաժանորդագրվել նորություններին</a></p>
+          <p><i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/ITCenterGhukasavan" target="_blanck">Միանալ facebook - ին</a></p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script data-cfasync="false" type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("header").style.fontSize = "20px";
+        } else {
+          document.getElementById("header").style.fontSize = "40px";
+        }
+      }
+
+   (function() {
+  function validEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+
+  function validateHuman(honeypot) {
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+  function getFormData(form) {
+    var elements = form.elements;
+
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      formData[name] = element.value;
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "Лист1";
+    formData.formGoogleSendEmail = form.dataset.email || ""; 
+
+    console.log(formData);
+    return formData;
+  }
+
+  function handleFormSubmit(event) {  
+    event.preventDefault();           
+    var form = event.target;
+    var data = getFormData(form);         
+    if( data.email && !validEmail(data.email) ) {   
+      var invalidEmail = form.querySelector(".email-invalid");
+      if (invalidEmail) {
+        invalidEmail.style.display = "block";
+        return false;
+      }
+    } else {
+      disableAllButtons(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          console.log(xhr.status, xhr.statusText);
+          console.log(xhr.responseText);
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; 
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "block";
+          }
+          return;
+      };
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    }
+  }
+  
+  function loaded() {
+    console.log("Contact form submission handler loaded successfully.");
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+  </script>
+</body>
+</html>
