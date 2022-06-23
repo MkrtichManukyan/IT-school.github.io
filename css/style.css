@@ -33,12 +33,17 @@ header ul a{
     border: 1px solid transparent;
     padding: 7px 10px;
     border-radius: 3px;
-    box-shadow: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 6px 1px;
 }
 header ul a:hover{
+    font-weight: 600;
+    box-shadow: 2px 2px 6px 1px #5f1782;
     border: 1px solid white;
-    transition: 1s;
-    color: #0c6fe4;
+    transition: 0.2s;
+    color: white;
+}
+.header-img-top{
+    margin-top: -170px;
 }
 .carousel-item img{
     max-height: 80vh;
@@ -65,7 +70,8 @@ header ul a:hover{
     margin: 20px;
 }
 .card:hover{
-    margin: 10px;
+    margin: 20px 32px;
+    padding: 0;
     transition: 0.5s;
 }
 .card-img-size{
@@ -98,7 +104,7 @@ header ul a:hover{
 }
 .news-all a{
     padding: 10px 30px;
-    background: linear-gradient(to right, #005eaa 0%, #6ab2ed 100%);
+    background: linear-gradient(to right, rgb(182 29 205 / 80%), #5f1782);
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -126,7 +132,7 @@ header ul a:hover{
 }
 .lecturer-all a{
     padding: 10px 30px;
-    background: linear-gradient( #005eaa , #6ab2ed );
+    background: linear-gradient(rgb(182 29 205 / 80%), #5f1782);
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -141,8 +147,7 @@ header ul a:hover{
 .btn{
     padding: 2px 25px;
     border-radius: 15px;
-    box-shadow: inset 0 -1px 1px linear-gradient( #005eaa , #6ab2ed );
-    background:  linear-gradient(to right, #1377c8 0%, #6ab2ed 100%);
+    background:  linear-gradient(to right,rgb(182 29 205), #5f1782);
 }
 .btn a{
     transition: 0.5s;
@@ -150,8 +155,8 @@ header ul a:hover{
     text-decoration: none;
 }
 .btn:hover{
-    color: #010e93;
-    box-shadow: inset 0.5px -1px 3px #234185;
+    color: #511270;
+    box-shadow: inset 0.5px -1px 3px #511270;
 }
 .footer{
     background-color: #4fa2f4;
@@ -361,4 +366,18 @@ header ul a:hover{
     line-height: 40px;
     font-family: "popins";
     color: #2c8cdc;
+}
+.register{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: "popins";
+}
+.register p{
+    margin-bottom: 50px;
+    color: #2c8cdc;
+}
+.cards-grup-top{
+    margin-top: 50px;
 }

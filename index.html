@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/15274a4f77.js" crossorigin="anonymous"></script>
   </head>
 <body>
-  <header class="sticky-top">
+  <header class="sticky-top" id="header-color">
           <nav class="navbar navbar-default navbar-expand-lg navbar-light" id="header">
             <div class="container">
             <div class="navbar-header">
@@ -32,57 +32,27 @@
                 <li class="nav-item p-3">
                     <a href="about us.html">Մեր մասին</a>
                 </li>
-                <li class="nav-item p-3">
-                    <a href="register.html">Ընդունելություն</a>
-                </li>
             </ul>
             </div>
             </div>
         </nav>
   </header>
   <section>
-         <section class="section-carusel">
-           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/283997064_1692102204461312_6663047634259541331_n.jpg" class="w-100" alt="slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p class="color-carusel-text">Մասիսի համայնքապետը այցելեց Ղուկասավան</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/279387279_183457654011133_5955268667228948840_n.jpg" class="w-100" alt="slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p class="color-carusel-text">հարցազրույց ամառային ստաժավորման համար</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/279638350_183000284056870_8769567672616804826_n.jpg" class="w-100" alt="slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p class="color-carusel-text">Այց. Ճապոնիայի պատվիրակություն</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </section>
+    <section>
+      <div class="header-img-top">
+        <img src="img/273478432_166021099088122_6327938199604058478_n.jpg" alt="grup-img" class="w-100"> 
+      </div>
+    </section>
        <section class="news">
           <div class="news-text">
             <p>Նորություններ</p>
           </div>
-          <div class="cards row container mx-auto">
+          <div class="register news-all">
+            <p>Այս պահին տեղիեունենում ընդունելություն․</p>
+            <p> Ընդունելության քննությանը մասնակցելու համար ծանորացեք Ընդունելության պայմաններին և լրացրեք առցանց դիմումը․</p>
+            <a href="register.html">առցանց դիմում</a>
+          </div>
+          <div class="cards row container mx-auto cards-grup-top">
             <div class="card col-xs-12 col-md">
                 <img class="card-img-size" src="img/283997064_1692102204461312_6663047634259541331_n.jpg" alt="Card image cap">
                 <div class="card-body card-div">
@@ -174,6 +144,15 @@
               document.getElementById("header").style.fontSize = "20px";
             } else {
               document.getElementById("header").style.fontSize = "40px";
+            }
+          }
+        window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              document.getElementById("header-color").style.background = "#7abdff";
+            } else {
+              document.getElementById("header-color").style.background = "none";
             }
           }
           </script>
