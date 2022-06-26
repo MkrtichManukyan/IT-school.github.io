@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/15274a4f77.js" crossorigin="anonymous"></script>
   </head>
 <body>
-  <header class="sticky-top">
+  <header class="sticky-top" id="header-color">
           <nav class="navbar navbar-default navbar-expand-lg navbar-light" id="header">
             <div class="container">
             <div class="navbar-header">
@@ -23,131 +23,73 @@
                 </button>
             <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
             <ul class="nav navbar-nav ul-nav">
-                <li class="nav-item p-3">
+                  <li class="nav-item p-3">
+                      <a href="index.html">Մեր մասին</a>
+                  </li>
+                  <li class="nav-item p-3">
                     <a href="news.html">Նորություններ</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a href="lecturers.html">Դասախոսներ</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a href="about us.html">Մեր մասին</a>
-                </li>
+                  </li>
+                  <li class="nav-item p-3">
+                      <a href="lecturers.html" id="activ">Դասնթացներ</a>
+                  </li>
+                  <li class="nav-item p-3">
+                      <a href="contact us.html">Հետադարձ Կապ</a>
+                  </li>
             </ul>
             </div>
             </div>
         </nav>
   </header>
   <section class="lecturer">
-     <div class="lecturer-text">
-       <p>Պատասխանատուներ</p>
+    <div class="news-text">
+      <p>Դասնթացներ</p>
+    </div>
+    <div class="register news-all">
+      <p>Այս պահին տեղիեունենում ընդունելություն․</p>
+      <p> Ընդունելության քննությանը մասնակցելու համար ծանորացեք Ընդունելության պայմաններին և լրացրեք առցանց դիմումը․</p>
+      <a href="register.html">առցանց դիմում</a>
+    </div>
+  </section>
+  <section class="news">
+     <div class="news-text register">
+       <p>Ղուկասավանի ՏՏ Կենտրոնում դասավանդում են Անգլերեն և Ծրագրավորում, UI / UX դիզայն</p>
      </div>
-     <div class="row container mx-auto">
+     <div class="cards row container mx-auto">
        <div class="card col-xs-12 col-md">
-         <img class="card-img-top" src="img/279021850_2806125809689723_9010455132823603693_n.jpg" alt="Card image cap">
-         <div class="card-body">
-           <p class="btn"><a href="https://www.facebook.com/ruzan.xachatryan.125" target="_blank">Ռուզան Խաչատրյան</a></p>
-         </div>
+           <img class="card-img-size" src="img/programing.png" alt="Card image cap">
+           <div class="card-body card-div">
+           <p class="card-text">Վեբ ծրագրավորումը ծրագրավորման մի բաժին է, որն զբաղվում է Համացանցում դինամիկ կայքերի ստեղծման և շահագործման աշխատանքով։ Այսինքն ապահովում է էջի տեսքը, ֆունկցիաները և որևէ իրավիճակից կախված` էջի թարմացումը։ Այս գործընթացը կազմակերպվում է Վեբ էջերի ծրագրավորողների կողմից` կիրառելով ծրագրային կոդեր և տեխնիկական միջոցներ։</p>
+           </div>
        </div>
        <div class="card col-xs-12 col-md">
-         <img class="card-img-top" src="img/86720945_506650406640108_1792280339268239360_n.jpg" alt="Card image cap">
-         <div class="card-body">
-           <p class="btn"><a href="https://www.facebook.com/rouzanna.aharonian" target="_blank">Ռուզան Ահարոնյան</a></p>
-         </div>
+           <img class="card-img-size" src="img/ui ux.png" alt="Card image cap">
+           <div class="card-body card-div">
+           <p class="card-text">UX դիզայնն անգլերեն հապավում է՝ user experience, և նշանակում է օգտատիրոջ փորձառություն: UX դիզայնն օգտատիրոջ փորձառության և վարքի վերլուծության հիման վրա ինտերֆեյսի պրոյեկտավորումն է։ User interface՝ օգտատիրոջ ինտերֆեյս: UI դիզայնը ներառում է ինտերֆեյսի գրաֆիկական հատվածի աշխատանքը՝ անիմացիա, ինլուստրացիա, կոճակներ, մենյու, սլայդերներ, լուսանկարներ, տառատեսակներ։</p>
+           </div>
        </div>
        <div class="card col-xs-12 col-md">
-         <img class="card-img-top" src="img/101990293_10157613358929296_2869747467576934400_n.jpg" alt="Card image cap">
-         <div class="card-body">
-           <p class="btn"><a href="https://www.facebook.com/samvel.movsisyan" target="_blank">Սամվել Մովսիսյան</a></p>
-         </div>
+           <img class="card-img-size" src="img/english.jpg" alt="Card image cap">
+           <div class="card-body card-div">
+           <p class="card-text">Անգլերենը ևս անհրաժեշտ է աշակերտներին, քանի որ 1) ծրագրավորման բոլոր լեզուների կոդերը ամբողջությամբ անգլերեն են, 2) անհրաժեշտ է արտերկրի պատվիրատուների հետ ազատ հաղորդակցության համար: Անգլերենի դասընթացների ժամանակ աշակերտները սովորում են անգլերեն ամենացածր մակարդակից:Անգլերենի դասաժամերը կնպաստեն աշակերտների անգլերենի բարելավմանը:</p>
+           </div>
        </div>
      </div>
    </section>
-       <section class="lecturer">
-          <div class="lecturer-text">
-            <p>Դասախոսներ</p>
-          </div>
-          <div class="row container mx-auto">
-            <div class="card col-xs-12 col-md">
-              <img class="card-img-top" src="img/118430326_3466636946714243_4304900710685442611_n.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="btn"><a href="https://www.facebook.com/vnairavarosyan" target="_blank">Նաիրա Վարոսյան</a></p>
-              </div>
-            </div>
-            <div class="card col-xs-12 col-md">
-              <img class="card-img-top" src="img/279184947_416737797121418_832618009810592158_n.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="btn"><a href="https://www.facebook.com/areg.hovhannisyan.940" target="_blank">Արեգ Հովհաննիսյան</a></p>
-              </div>
-            </div>
-            <div class="card col-xs-12 col-md">
-              <img class="card-img-top" src="img/242066803_4357751830976235_1871303592749501305_n.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="btn"><a href="https://www.facebook.com/aida.grigorian.7" target="_blank">Աիդա Գրիգորյան</a></p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="lecturer">
-           <div class="lecturer-text">
-             <p>Առաջատարներ</p>
-           </div>
-           <div class="row container mx-auto">
-            <div class="card col-xs-12 col-md">
-              <img class="card-img-top" src="img/0878a5f3-15e2-42aa-8ba8-3fdcd9f75718.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="btn"><a href="https://www.facebook.com/profile.php?id=100045562099147" target="_blank">Ռաֆայել Կարապետյան</a></p>
-              </div>
-            </div>
-             <div class="card col-xs-12 col-md">
-               <img class="card-img-top" src="img/a282a4ea-81d5-4aaf-b752-290aba5543e1.jpg" alt="Card image cap">
-               <div class="card-body">
-                 <p class="btn"><a href="https://www.facebook.com/mkrtich.manukyan.165" target="_blank">Մկրտիչ Մանուկյան</a></p>
-               </div>
-             </div>
-             <div class="card col-xs-12 col-md">
-               <img class="card-img-top" src="img/dba86a36-66b5-47b7-8ddd-0b050efd771b.jpg" alt="Card image cap">
-               <div class="card-body">
-                 <p class="btn"><a href="https://www.facebook.com/karlen.avetisyan.942" target="_blank">Կառլեն Ավետիսյան</a></p>
-               </div>
-             </div>
-           </div>
-         </section>
-         <section class="lecturer">
-            <div class="row container mx-auto">
-              <div class="card col-xs-12 col-md">
-                <img class="card-img-top" src="img/3bef3499-6191-4a9e-a97e-3888a75dfb77.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="btn"><a href="https://www.facebook.com/suren.sahakyan.948" target="_blank">Սուրեն Սահակյան</a></p>
-                </div>
-              </div>
-              <div class="card col-xs-12 col-md-6">
-                <img class="card-img-top" src="img/0a2c9c26-bec1-4296-9ada-d65ed942acd1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="btn"><a href="https://www.facebook.com/profile.php?id=100011650815619" target="_blank">Թամարա Մկրտչյան</a></p>
-                </div>
-              </div>
-              <div class="card col-xs-12 col-md-6">
-                <img class="card-img-top" src="img/2f6b2dde-594e-4baf-a266-17dc0eb079af.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="btn"><a href="https://www.facebook.com/friends/suggestions/?profile_id=100055144200141" target="_blank">Ալիսա Մկրտչյան</a></p>
-                </div>
-            </div>
-          </section>
-        <footer class="footer">
-            <div class="footer-menu navbar">
-              <div class="footer-text">
-                  <p>Ձեր կարծիքը կարևոր է.</p>
-                  <p>էլ. փոստ՝ <a href="mailTo:Ghukasavan@gmail.com" target="_blank">Ghukasavan@gmail.com</a></p>
-                  <p>հեռ․՝ <a href="tel:+374-93-988-774">+374-93-988-774</a></p>
-                  <p>հասցե՝ Գյուղ Ղուկասավան</p>
-              </div>
+          <footer class="footer">
+              <div class="footer-menu navbar">
                 <div class="footer-text">
-                  <p>© 2022 | Պատրաստված է html-ով և css-ով</p>
-                  <p><i class="fa-solid fa-envelope"></i> <a href="register-follow.html">Բաժանորդագրվել նորություններին</a></p>
-                  <p><i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/ITCenterGhukasavan" target="_blanck">Միանալ facebook - ին</a></p>
+                    <p>Ձեր կարծիքը կարևոր է.</p>
+                    <p>էլ. փոստ՝ <a href="mailTo:Ghukasavan@gmail.com" target="_blank">Ghukasavan@gmail.com</a></p>
+                    <p>հեռ․՝ <a href="tel:+374-93-988-774">+374-93-988-774</a></p>
+                    <p>հասցե՝ Գյուղ Ղուկասավան</p>
                 </div>
-            </div>
-        </footer>
+                  <div class="footer-text">
+                    <p><i class="fa-solid fa-envelope"></i> <a href="register-follow.html">Բաժանորդագրվել նորություններին</a></p>
+                    <p><i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/ITCenterGhukasavan" target="_blanck">Միանալ facebook - ին</a></p>
+                    <p>© 2022 | Բոլոր իրավունքները պաշտպանված են</p>
+                  </div>
+              </div>
+          </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script>window.onscroll = function() {scrollFunction()};
 

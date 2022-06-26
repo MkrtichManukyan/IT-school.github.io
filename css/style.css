@@ -19,7 +19,7 @@
     background: #555; 
 }
 header{
-    background: #7abdff;
+    background: linear-gradient(to right, rgb(182 29 205 / 80%), #5f1782);
     box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
 }
 .logo img{
@@ -34,16 +34,20 @@ header ul a{
     padding: 7px 10px;
     border-radius: 3px;
     box-shadow: 2px 2px 6px 1px;
+    font-weight: 600;
 }
 header ul a:hover{
-    font-weight: 600;
-    box-shadow: 2px 2px 6px 1px #5f1782;
+    box-shadow: 2px 2px 6px 1px #3ca8ff;
     border: 1px solid white;
-    transition: 0.2s;
     color: white;
 }
 .header-img-top{
     margin-top: -170px;
+}
+#activ{
+    box-shadow: 2px 2px 6px 1px #3ca8ff;
+    border: 1px solid white;
+    color: white;
 }
 .carousel-item img{
     max-height: 80vh;
@@ -68,6 +72,8 @@ header ul a:hover{
     width: 18rem;
     box-shadow: 10px 5px 10px rgb(191 196 209);
     margin: 20px;
+    display: flex;
+    align-items: center;
 }
 .card:hover{
     margin: 20px 32px;
@@ -79,6 +85,11 @@ header ul a:hover{
     margin: 0 auto;
     padding-top: 30px;
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .card-body h5{
     text-align: center;
     font-size: 25px;
@@ -87,6 +98,8 @@ header ul a:hover{
     font-size: 15px;
 }
 .btn-btn{
+    max-width: 150px;
+    width: 100%;
     padding: 2px 25px;
     color: #1c2de5;
     text-decoration: none;
@@ -98,25 +111,6 @@ header ul a:hover{
     color: #010e93;
     box-shadow: inset 0.5px -1px 3px #92969f;
 }
-.news-all{
-    margin-top: 10%;
-    text-align: right;
-}
-.news-all a{
-    padding: 10px 30px;
-    background: linear-gradient(to right, rgb(182 29 205 / 80%), #5f1782);
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.5s;
-    box-shadow: 3px 3px 3px #838485;
-}
-.news-all a:hover{
-    opacity: 0.8;
-    color: white;
-    box-shadow: 3px 3px 3px #535454;
-}
 .lecturer{
     max-width: 960px;
     width: 100%;
@@ -125,24 +119,6 @@ header ul a:hover{
 .lecturer-text p{
     font-size: 35px;
     color: #005eaa;
-}
-.lecturer-all{
-    margin-top: 10%;
-    text-align: end;
-}
-.lecturer-all a{
-    padding: 10px 30px;
-    background: linear-gradient(rgb(182 29 205 / 80%), #5f1782);
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.5s;
-    box-shadow: 3px 3px 3px #838485;
-}
-.lecturer-all a:hover{
-    opacity: 0.8;
-    color: white;
 }
 .btn{
     padding: 2px 25px;
@@ -159,7 +135,7 @@ header ul a:hover{
     box-shadow: inset 0.5px -1px 3px #511270;
 }
 .footer{
-    background-color: #4fa2f4;
+    background: linear-gradient(to right, rgb(182 29 205), #5f1782);
 }
 .footer-menu{
     max-width: 960px;
@@ -304,22 +280,23 @@ header ul a:hover{
 .about-us-vidio-text iframe{
     margin-top: 50px;
 }
-.counter-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .counter-container div{
   margin: 5%;
 }
+.counter-container div i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #5f1782;
+}
 .counter-container div p{
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 40px;
   font-family: "popins";
   text-align: center;    
-  color: #2c8cdc;
-  text-shadow: 10px 10px 4px;
+  color: #5f1782;
 }
 .counter-value{
   font-size: 35px;
@@ -327,10 +304,10 @@ header ul a:hover{
   line-height: 40px;
   font-family: "popins";
   text-align: center;
-  color: #2c8cdc;
+  color: #511270;
 }
 .register-menu{
-    margin-top: 10%;
+    margin: 10% 15%;
 }
 .register-menu-p-one{
     margin-top: 50px;
@@ -378,6 +355,46 @@ header ul a:hover{
     margin-bottom: 50px;
     color: #2c8cdc;
 }
+.register img{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+}
+.news-all{
+    margin-top: 10%;
+}
+.news-all a{
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(182 29 205), #5f1782);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px #838485;
+}
+.news-all a:hover{
+    opacity: 0.8;
+    color: white;
+    box-shadow: 3px 3px 3px #535454;
+}
 .cards-grup-top{
     margin-top: 50px;
+}
+.map{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.no-margin p{
+    margin-top: 0;
+}
+.no-margin label{
+    margin-top: 0;
+}
+@media (max-width: 450px){
+    .lecturer-text p{
+        font-size: 25px;
+    }
 }
