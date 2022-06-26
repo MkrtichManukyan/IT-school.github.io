@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MKRTICH MANUKYAN">
+    <title>IT Center Ghukasavan</title>
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/15274a4f77.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <header class="sticky-top" id="header-color">
+          <nav class="navbar navbar-default navbar-expand-xl navbar-light" id="header">
+            <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+                        aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+            <ul class="nav navbar-nav ul-nav">
+                  <li class="nav-item p-3">
+                      <a href="index.html">Մեր մասին</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a href="news.html">Նորություններ</a>
+                  </li>
+                  <li class="nav-item p-3">
+                      <a href="lecturers.html">Դասընթացներ</a>
+                  </li>
+                  <li class="nav-item p-3">
+                      <a href="working.html" id="activ">Աշխատանքներ</a>
+                  </li>
+                  <li class="nav-item p-3">
+                      <a href="contact us.html">Հետադարձ Կապ</a>
+                  </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+  </header>
+  <section>
+       <section class="news">
+          <div class="news-text">
+            <p>Մեր համագործակցությունները տարբեր ընկերությունների հետ</p>
+          </div>
+          <div class="register news-all">
+            <p>ՏՏ կենտրոնի լավագույն աշակերտները համագործակցեցին Digital Pomegranate ընկերության հետ։ Պատրաստեցին Ճապոնիայի եւ Ամերիկայի երիտասարդների համար նախատեսված  հավելվածի վեբկայքը ։</p>
+          </div>
+        </section>
+        <section class="lecturer">
+           <div class="row container mx-auto">
+            <div class="card col-xs-12 col-md">
+              <img class="card-img-top" src="img/4c9657d2-2f57-4815-9af0-3cade38caae8.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="btn"><a href="https://kyoutsutestenglish.com/" target="_blank">Գլխավոր էջ</a></p>
+              </div>
+            </div>
+             <div class="card col-xs-12 col-md">
+               <img class="card-img-top" src="img/6b283a14-e014-4450-b285-f2be53408d18.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <p class="btn"><a href="https://kyoutsutestenglish.com/about/" target="_blank">Մեր մասին</a></p>
+               </div>
+             </div>
+             <div class="card col-xs-12 col-md">
+               <img class="card-img-top" src="img/3c3b47e2-82fc-42c8-a5cf-c486d88c9764.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <p class="btn"><a href="https://kyoutsutestenglish.com/contact-us/" target="_blank">Կապ մեզ հետ</a></p>
+               </div>
+             </div>
+           </div>
+         </section>
+  </section>
+        <footer class="footer">
+            <div class="footer-menu navbar">
+              <div class="footer-text">
+                  <p>Ձեր կարծիքը կարևոր է.</p>
+                  <p>էլ. փոստ՝ <a href="mailTo:Ghukasavan@gmail.com" target="_blank">Ghukasavan@gmail.com</a></p>
+                  <p>հեռ․՝ <a href="tel:+374-93-988-774">+374-93-988-774</a></p>
+                  <p>հասցե՝ Գյուղ Ղուկասավան</p>
+              </div>
+                <div class="footer-text">
+                  <p><i class="fa-solid fa-envelope"></i> <a href="register-follow.html">Բաժանորդագրվել նորություններին</a></p>
+                  <p><i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/ITCenterGhukasavan" target="_blanck">Միանալ facebook - ին</a></p>
+                  <p>© 2022 | Բոլոր իրավունքները պաշտպանված են</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              document.getElementById("header").style.fontSize = "20px";
+            } else {
+              document.getElementById("header").style.fontSize = "40px";
+            }
+          }
+          </script>
+  </body>
+</html>
