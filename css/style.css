@@ -382,11 +382,6 @@ header ul a:hover{
 .cards-grup-top{
     margin-top: 50px;
 }
-.map{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .no-margin p{
     margin-top: 0;
 }
