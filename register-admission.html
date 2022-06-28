@@ -36,7 +36,7 @@
                         <a href="working.html">Աշխատանքներ</a>
                     </li>
                     <li class="nav-item p-3">
-                        <a href="contact us.html">Հետադարձ Կապ</a>
+                        <a href="contact.html">Հետադարձ Կապ</a>
                     </li>
               </ul>
             </div>
@@ -58,14 +58,19 @@
             </div>
         </div>
         <div class="form-row d-flex flex-column flex-lg-row">
+          <div class="form-group col-md-6 input-margin">
+            <input type="text" class="input-register" name="fader_name" placeholder="Հայրանուն">
+          </div>
+      </div>
+        <div class="form-row d-flex flex-column flex-lg-row">
             <div class="form-group col-md-6 input-margin d-flex flex-column align-items-start">
                 <label for="name" class="input-label-two">Սեռ</label>
                 <div class="form-check form-check-inline form-margin-input">
-                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Արական">
                     <label class="form-check-label input-label-two" for="male">Արական</label>
                 </div>
                 <div class="form-check form-check-inline form-margin-input">
-                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Իգական">
                     <label class="form-check-label input-label-two" for="female">Իգական</label>
                 </div>
             </div>
@@ -82,7 +87,25 @@
                 <input type="tel" class="input-register" id="phone" name="phone" placeholder="Ծնողի հեռ․">
             </div>
         </div>
-    
+        
+        <div class="form-group col-md-6 input-margin">
+          <select class="form-select" aria-label="Default select example" name="skils-computer">
+            <option selected>Համակարքչային Գիտելիքներ</option>
+            <option value="Գերազանց">Գերազանց</option>
+            <option value="Բավարար">Բավարար</option>
+            <option value="Վատ">Վատ</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 input-margin">
+          <select class="form-select" aria-label="Default select example" name="skils-english">
+            <option selected>Համակարքչային Գիտելիքներ</option>
+            <option value="Գերազանց">Գերազանց</option>
+            <option value="Բավարար">Բավարար</option>
+            <option value="Վատ">Վատ</option>
+          </select>
+        </div>
+        <label for="name" class="input-label-two">ՏՏ Կենտրոն Ընդունվելու պատճառներ</label>
+        <textarea  class="black-color" name="message" rows="5" cols="22" required="" style="font-size: 1.3em;width: 300px; border: 1px solid #2c8cdc; outline: none; text-align: center; border-radius: 25px; margin-top: 15px;resize: none; padding: 25px;"></textarea>
       <button class="input-register-button" onclick="animateText(textExample)">ՈՒղարկել</button>
       </div>
     </div>

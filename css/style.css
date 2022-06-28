@@ -49,24 +49,18 @@ header ul a:hover{
     border: 1px solid white;
     color: white;
 }
-.carousel-item img{
-    max-height: 80vh;
-}
-.color-carusel-text{
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 40px;
-    font-family: "popins";
-    color: #2c8cdc;
-}
 .news{
     max-width: 960px;
     width: 100%;
     margin: 20px auto;
 }
 .news-text p{
+    text-align: center;
     font-size: 35px;
     color: rgb(47, 94, 188);
+}
+.container{
+    padding: 0;
 }
 .card{
     width: 18rem;
@@ -74,11 +68,6 @@ header ul a:hover{
     margin: 20px;
     display: flex;
     align-items: center;
-}
-.card:hover{
-    margin: 20px 32px;
-    padding: 0;
-    transition: 0.5s;
 }
 .card-img-size{
     width: 80%;
@@ -114,9 +103,10 @@ header ul a:hover{
 .lecturer{
     max-width: 960px;
     width: 100%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .lecturer-text p{
+    text-align: center;
     font-size: 35px;
     color: #005eaa;
 }
@@ -197,6 +187,11 @@ header ul a:hover{
     font-size: 20px;
     color: #2c8cdc;
     margin-top: 25%;
+}
+.input-margin select{
+    color: #2c8cdc;
+    border: 1px solid #2c8cdc;
+    outline: none;
 }
 .input-label-two{
     font-size: 20px;
@@ -280,34 +275,8 @@ header ul a:hover{
 .about-us-vidio-text iframe{
     margin-top: 50px;
 }
-.counter-container div{
-  margin: 5%;
-}
-.counter-container div i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: #5f1782;
-}
-.counter-container div p{
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 40px;
-  font-family: "popins";
-  text-align: center;    
-  color: #5f1782;
-}
-.counter-value{
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 40px;
-  font-family: "popins";
-  text-align: center;
-  color: #511270;
-}
 .register-menu{
-    margin: 10% 15%;
+    margin: 5% 15%;
 }
 .register-menu-p-one{
     margin-top: 50px;
@@ -346,13 +315,14 @@ header ul a:hover{
 }
 .register{
     text-align: left;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 40px;
     font-family: "popins";
+    text-align: center;
 }
 .register p{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #2c8cdc;
 }
 .register img{
@@ -396,9 +366,6 @@ header ul a:hover{
 }
 .black-border{
     border: 1px solid black;
-}
-.fontsize p{
-    font-size: 25px;
 }
 @media (max-width: 450px){
     .lecturer-text p{

@@ -36,7 +36,7 @@
                       <a href="working.html">Աշխատանքներ</a>
                   </li>
                   <li class="nav-item p-3">
-                      <a href="contact us.html">Հետադարձ Կապ</a>
+                      <a href="contact.html">Հետադարձ Կապ</a>
                   </li>
             </ul>
             </div>
@@ -157,25 +157,8 @@
                   <p class="btn"><a href="https://www.facebook.com/friends/suggestions/?profile_id=100055144200141" target="_blank">Ալիսա Մկրտչյան</a></p>
                 </div>
             </div>
-    <div class="counter-container flex-column flex-sm-row d-flex" id="counter">
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <div class="counter-value" data-count="277">0</div>
-            <p>Facebook Հետևորդներ</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-book"></i>
-          <div class="counter-value" data-count="120">0</div>
-            <p>Անցկացված Դասեր</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-users"></i>
-          <div class="counter-value" data-count="15">0</div>
-            <p>Աշակերտների քանակ</p>
-        </div>
-      </div>
     </div>
-          </section>
+  </section>
   </section>
         <footer class="footer">
             <div class="footer-menu navbar">
@@ -193,7 +176,6 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
         window.onscroll = function() {scrollFunction()};
 
@@ -213,49 +195,6 @@
               document.getElementById("header-color").style.background = "none";
             }
           }
-
-
-          var i=0,tetx;
-
-    function typeing(){
-        if(i<text.length){
-            document.getElementById("text").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeing,50);
-        }
-    }
-    var a = 0;
-
-$(window).scroll(function() {
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.counter-value').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-        
-      $({
-        countNum: $this.text()
-      }).animate({
-        countNum: countTo
-      }, {
-        duration: 5000,
-        easing: 'swing',
-        step: function() {
-          $this.text(Math.floor(this.countNum));
-        },
-        complete: function() {
-          $this.text(this.countNum);
-        }
-      });
-    });
-
-    a = 1;
-  }
-});
-
-
-
           </script>
   </body>
 </html>
