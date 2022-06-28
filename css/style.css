@@ -144,6 +144,7 @@ header ul a:hover{
     align-items: center;
 }
 .footer-text p a{
+    padding-left: 5px;
     color: white;
     text-decoration: none;
 }
@@ -269,7 +270,7 @@ header ul a:hover{
 }
 .about-us-vidio-text{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 .about-us-vidio-text iframe{
@@ -330,6 +331,9 @@ header ul a:hover{
     width: 100%;
     display: flex;
     margin: 50px auto;
+}
+.link-site a{
+    padding-left: 5px;
 }
 .news-all{
     margin-top: 10%;
