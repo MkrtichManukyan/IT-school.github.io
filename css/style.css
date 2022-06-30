@@ -367,4 +367,7 @@ header ul a:hover{
     .lecturer-text p{
         font-size: 25px;
     }
+    .header-img-top img{
+        height: 250px;
+    }
 }
