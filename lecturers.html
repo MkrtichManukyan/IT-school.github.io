@@ -2,6 +2,7 @@
 <html lang="hy">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="MKRTICH MANUKYAN">
     <title>IT Center Ghukasavan</title>
@@ -48,7 +49,7 @@
       <p>Դասընթացներ</p>
     </div>
     <div class="register news-all">
-      <p>Այս պահին տեղի է ունենում ընդունելություն․</p>
+      <p>Ընդունելություն տեղի կունենա Օգոստոսի 1 - ից․</p>
       <p>Ընդունելության քննությանը մասնակցելու համար ծանոթացեք ընդունելության պայմաններին և լրացրեք առցանց դիմումը․</p>
       <p>Պայմաններ</p>
       <div class="register-menu">
@@ -59,7 +60,7 @@
               <li>դասերի վայրը՝ Արարատի մարզ, Գյուղ Ղուկասավան</li>
           </ul>
       </div>
-      <a href="register-admission.html">Առցանց դիմում</a>
+      <button href="register-admission.html" id="button">Առցանց դիմում</button>
     </div>
   </section>
   <section class="news">
@@ -112,6 +113,19 @@
               document.getElementById("header").style.fontSize = "40px";
             }
           }
+
+          
+
+        const month = new Date().getMonth();
+
+        if (month < 7) {
+            document.getElementById("button").disabled = true;
+        } else if (month > 7) {
+            document.getElementById("button").disabled = true;
+        } else {
+            document.getElementById("button").disabled = false;
+        }
+
           </script>
   </body>
 </html>

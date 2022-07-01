@@ -300,8 +300,8 @@ header ul a:hover{
 .news-all{
     margin-top: 10%;
 }
-.news-all a{
-    padding: 10px 30px;
+.news-all button{
+    padding: 0px 10px;
     background: linear-gradient(to right, rgba(43, 39, 61, 0.8), #021141);
     color: white;
     font-size: 20px;
@@ -309,6 +309,7 @@ header ul a:hover{
     border-radius: 10px;
     transition: 0.5s;
     box-shadow: 3px 3px 3px #838485;
+    border: none;
 }
 .news-all a:hover{
     opacity: 0.8;
