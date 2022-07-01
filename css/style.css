@@ -178,6 +178,9 @@ header ul a:hover{
 .form-margin-input{
     margin-top: 20px;
 }
+.margin-input{
+    margin: 0 20px 50px 20px;
+}
 .input-margin{
     margin: 50px 20px;
 }
@@ -205,6 +208,10 @@ header ul a:hover{
     font-size: 16px;
     outline: none;
     margin: 15px;
+}
+.width{
+    max-width: 600px;
+    width: 100%;
 }
 .input-register-info{
     border-radius: 30px;
@@ -235,13 +242,13 @@ header ul a:hover{
     width: 100%;
     display: none;
     background: none;
-    border: 8px solid #3ca8ff;
-    box-shadow: 20px 20px 20px 5px #1b6bab;
+    border: 8px solid black;
+    box-shadow: 20px 20px 20px 5px black;
     text-align: center;
     border-radius: 20px;
 }
 .thankyou_message{
-    color: #2c8cdc;
+    color: black;
     text-shadow: 10px 10px 4px;
     margin: 50% 0;
 }
@@ -252,46 +259,9 @@ header ul a:hover{
     line-height: 40px;
     font-family: "popins";
 }
-#text{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 40px;
-    font-family: "popins";
-    color: #2c8cdc;
-    text-shadow: 10px 10px 4px;
-    margin-top: 50px;
-}
 .about-us-vidio-text iframe{
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.register-menu{
-    margin: 5% 15%;
-}
-.register-menu-p-one{
-    margin-top: 50px;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 40px;
-    font-family: "popins";
-    text-align: center;
-    color: #2c8cdc;
-}
-.register-menu-p-two{
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 40px;
-    font-family: "popins";
-    text-align: center;
-    color: #2c8cdc;
-}
-.register-menu-p-two a{
-    color: #24a0ff;
-}
-.register-menu-p-two a:hover{
-    color: #005290;
 }
 .register-ul{
     display: flex;
