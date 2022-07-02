@@ -60,6 +60,7 @@ header ul a:hover{
 }
 .container{
     padding: 0;
+    justify-content: center;
 }
 .card{
     width: 18rem;
